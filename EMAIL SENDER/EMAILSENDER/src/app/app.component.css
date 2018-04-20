@@ -1,0 +1,82 @@
+
+.addcat{
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid;
+  padding-left: 10px;
+  font-size: 19px;
+  background-color: green;
+  }
+.addcat .fa{
+  font-size: 21px;
+  padding: 5px;
+    
+}
+.addcat div{
+  cursor: pointer;
+}
+.addcat div:hover{
+  color:black;
+}
+.modal{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  display: block;
+  top:0;
+  left: 0;
+  padding-top:100px;
+  z-index: 100;
+  display:none;
+  padding-bottom:20px;
+}
+
+  .modalBox {
+    width: 37%;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    z-index: 100;
+    border-radius: 5px;
+ 
+}
+
+.form-group input {
+  width: 77%;
+    height: 35px;
+    margin: 7px;
+    text-align: center;
+    outline: 1px solid grey;
+}
+.form-group input:focus, .form-group textarea:focus{
+  outline: 2px solid grey;
+}
+.form-group textarea{
+  width: 77%;
+    height:50px;
+    margin: 7px;
+    text-align: center;
+    outline: 1px solid grey;
+}
+.pHead{
+  font-size: 35px;
+  font-weight: 600;
+  color: #a76c41;
+  margin: 0;
+  padding: 20px;
+}
+.buttonSend{
+  padding: 10px 32px;
+  /* outline: 2px solid #a76c41; */
+  border-radius: 5px;
+  border: 1px solid #A76C46;
+  color: #A76C46;
+  font-size: 18px;
+  font-style: oblique;
+  margin: 21px 0;
+}

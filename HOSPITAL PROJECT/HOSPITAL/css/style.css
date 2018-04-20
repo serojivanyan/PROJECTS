@@ -1,0 +1,66 @@
+body{
+	background-image: url(../images/large_your-hospital-visit-is-coming-drd9pkdf.jpg);
+}
+.hospitalh1{
+	color: #063358;
+    font-size: 76px;
+    font-weight: 900;
+    font-family: monospace;
+    margin: 20px auto;
+    text-align: center;
+}
+.containerDiv {
+    margin-top: 77px;
+    padding-bottom: 25px;
+    background-color: rgba(140, 170, 177, 0.41);
+    min-height: 480px;
+    border: 2px solid #063358;
+}
+.nav-tabs {
+    border-bottom: 2px solid #063358;
+}
+.nav-tabs>li>a {
+    font-size: 20px
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #063358;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 1px solid #063358;
+}
+
+
+#divList{
+    min-height: 321px;
+    min-width: 916px; 
+    margin: 0px;
+    background-color: white;
+    position: absolute;
+    margin-top: -133px;
+    margin-left: 206px;
+    border: 1px solid #063358;
+}
+#divListDoctor,#divListPatient,#divListWorker{
+    min-height: 321px;
+    min-width: 916px; 
+    margin: 0px;
+    background-color: white;
+    position: absolute;
+    margin-top: -245px;
+    margin-left: 206px;
+    border: 1px solid #063358;
+}
+#list li,#listDoctor li,#listWorker li,#listPatient li{
+    font-size: 24px;
+    color: #337AB7;
+    font-family: initial;
+    border-bottom-style: double;
+    padding-top: 6px;
+}

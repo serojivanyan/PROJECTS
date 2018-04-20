@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="contentContainer">
+		<div class="contentInnerContainer">
+			<div class="subdomainAccountSettings card">
+				<div class="heading">
+					Account Settings
+				</div>
+				<div class="settings">
+					<div class="editUserAvatar">
+						<div class="userAvatar">
+							<div class="avatarContainer"><img src="http://graph.facebook.com/{{userIdRes}}/picture?type=square"></div>
+						</div>
+						<div class="fileInput">
+							<div class="fileInputButton" style="border-style: solid;">
+								<span>Upload image</span><input type="file">
+							</div>
+						</div>
+					</div>
+					<div class="fields">
+						<div class="textInput">
+							<div class="inset">
+								Name
+							</div>
+							<div class="inputContainer">
+								<input type="text" id="name">
+							</div>
+						</div>
+						<div class="textInput">
+							<div class="inset">
+								Email
+							</div>
+							<div class="inputContainer">
+								<input type="text" id="email">
+							</div>
+						</div>
+					</div><button class="button cannyButton" disabled type="button"><span class="label">Save</span> <span class="loader"></span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

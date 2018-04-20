@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  	<script type="text/javascript" src="../js/hospital.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+  	<script type="text/javascript" src="../js/people.js"></script>
+  	<script type="text/javascript" src="../js/patient.js"></script>
+  	<script type="text/javascript" src="../js/doctor.js"></script>
+  	<script type="text/javascript" src="../js/worker.js"></script>
+
+    <script type="text/javascript" src="../http/postHttpReq.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<h1 class="hospitalh1">All About Hospitals</h1>
+<div class="container containerDiv">
+	<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#Hospital">Hospital</a></li>
+    <li><a data-toggle="tab" href="#Doctors">Doctors</a></li>
+    <li><a data-toggle="tab" href="#Patients">Patients</a></li>
+    <li><a data-toggle="tab" href="#Workers">Workers</a></li>
+  </ul>
+   <div class="tab-content">
+
+
+
+    <div id="Hospital" class="tab-pane fade in active">
+      	<h3>Hospital</h3>
+
+   	  	<input type="text"  id="hospitalName" placeholder="   Hospital Name"></br>
+   	  	</br>
+   	  	<input type="text"  id="hospitalAddress" placeholder="   Hospital Address"></br>
+   	  	</br>
+
+        </br>
+   	  
+
+      	<button onclick="runHospital()">Add Hospital</button>
+        <div id = "divList">
+          <ol id="list">
+            
+          </ol> 
+          
+        </div>
+      
+        
+      	
+      
+    </div>
+
+
+    <div id="Doctors" class="tab-pane fade">
+      	<h3>Doctors</h3>
+
+      	<input type="text" placeholder="  Name" id="doctorName"> </br>
+      	</br>
+      	<input type="text" placeholder="  Lastname" id="doctorlastName"></br>
+      	</br>
+      	<input type="text" placeholder="  Age" id="doctorAge"></br>
+      	</br>
+      	<input type="text" placeholder="  Specialization" id="doctorSpecialization"></br>
+      	</br>
+      	<input type="text" placeholder="  Experience" id="doctorExperience"></br>
+        </br>
+         <button onclick="runDoctor()">Add Doctor</button>
+      
+        <div id = "divListDoctor">
+          <ol id="listDoctor">
+            
+          </ol> 
+          
+        </div>
+
+    </div>
+
+
+    <div id="Patients" class="tab-pane fade">
+      	<h3>Patients</h3>
+
+      	<input type="text" placeholder="  Name" id="patientName"> </br>
+      	</br>
+      	<input type="text" placeholder="  Lastname" id="patientlastName" ></br>
+      	</br>
+      	<input type="text" placeholder="  Age" id="patientAge"></br>
+      	</br>
+      	<input type="text" placeholder="   Disease" id="patientDisease"></br>
+      	</br>
+      	<input type="text" placeholder="  Date" id="patientDate"> </br>
+        </br>
+        <button onclick="runPatient()">Add Patient</button>
+        <div id = "divListPatient">
+            <ol id="listPatient">
+              
+            </ol> 
+            
+          </div>
+
+    </div>
+
+
+
+    <div id="Workers" class="tab-pane fade">
+      	<h3>Workers</h3>
+      	    	
+      	<input type="text" placeholder="  Name" id ="workerName"> </br>
+      	</br>
+      	<input type="text" placeholder="  Lastname" id ="workerlastName"></br>
+      	</br>
+      	<input type="text" placeholder="  Age" id ="workerAge"></br>
+      	</br>
+      	<input type="text" placeholder="  Role" id ="workerRole"> </br>
+        </br>
+        <input type="text" placeholder="  Compensation" id ="workerCompensation"></br>
+        </br> 
+        <button onclick="runWorker()">Add Worker</button>
+      	<div id = "divListWorker">
+          <ol id="listWorker">
+            
+          </ol> 
+          
+        </div>
+    </div>
+  </div>
+ </div> 
+</body>
+</html>

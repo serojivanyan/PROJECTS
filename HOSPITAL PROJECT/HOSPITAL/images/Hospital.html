@@ -1,0 +1,386 @@
+<html>
+	<head>	
+		<style>
+			.block{
+		  border:1px solid crimson;
+		  background-color:lightgreen;
+		  width:100%;
+		  float:left;
+		}
+		.blockk{
+		  border:1px solid crimson;
+		  background-color:lightgreen;
+		  width:100%;
+		  float:left;
+		  font-size:21px;
+		  text-align: center;
+		}
+		.inlineBlock{
+		  background-color:lightsalmon;
+		  width:20%;
+		  display:inline-block;
+		  float:left;
+		  text-align:center;
+		}
+		.inlineBlock2{
+		  border:1px solid lightsalmon;
+		  background-color:lightyellow;
+		  width:100%;
+		  display:inline-block;
+		  float:left;
+		  text-align:center;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<script>
+
+		//global object People
+		function People(peopleObj){
+		  this.name=peopleObj.name;
+		  this.lastName=peopleObj.lastName;
+		  this.age=peopleObj.age;
+		  this.passInfo=peopleObj.passInfo;
+		}
+		//new People
+		let human1 = new People({
+								name:"Suren",
+		                        lastName:"Avdalyan",
+		                        age:22,
+		                        passInfo:"AF07448658"
+		                       });
+		let human2 = new People({
+								name:"Seryoja",
+		                        lastName:"Ivanyan",
+		                        age:22,
+		                        passInfo:"AR0764855"
+		                       });
+		let human3 = new People({
+								name:"Armen",
+		                        lastName:"Zaprosyan",
+		                        age:48,
+		                        passInfo:"AF07755888"
+		                       });
+		let human4 = new People({
+								name:"Nina",
+		                        lastName:"Israelyan",
+		                        age:25,
+		                        passInfo:"AK07755999"
+		                       });
+		let human5 = new People({
+								name:"Garik",
+		                        lastName:"Minasyan",
+		                        age:22,
+		                        passInfo:"AM07707255"
+		                       });
+		let human6 = new People({
+								name:"Anna",
+		                        lastName:"Lalazaryan",
+		                        age:25,
+		                        passInfo:"AM07209999"
+		                       });
+		//object Doctor 
+		function Doctor(doctorObj){
+		  this.experience=doctorObj.experience;
+		  this.__proto__=doctorObj.__proto__;
+		}
+		//new Doctor
+		let doctor4 = new Doctor({
+		                          experience:5,
+		                          __proto__:human4
+		                                 });
+		let doctor2 = new Doctor({
+		                          experience:6,
+		                          __proto__:human2
+		                               });
+		//object Patient
+		function Patient(patientObj){
+		  this.disease=patientObj.disease;
+		  this.__proto__=patientObj.__proto__;
+		}
+		//new Patient
+		let patient1 = new Patient({
+		                            disease:"flatulence",
+		                            __proto__:human1
+		                                 });
+		let patient5 = new Patient({
+		                            disease:"allergy",
+		                            __proto__:human5
+		                                 });
+		//object Worker
+		function Worker(workerObj){
+		  this.profession=workerObj.profession;
+		  this.__proto__=workerObj.__proto__;
+		}
+		//new Worker
+		let worker3 = new Worker({
+		                          profession:"Deweloper",
+		                          __proto__:human3
+		                                 });
+		let worker6 = new Worker({
+		                          profession:"Deweloper",
+		                          __proto__:human6
+		                                 });
+		//object Hospital
+		function Hospital(name){
+		  let that=this;
+		  this.name=name;
+		  this.adres="";
+		  this.doctors=[];
+		  this.workers=[];
+		  this.patients=[];
+		  
+		  //adres
+		  this.setAdres=function(adres){that.adres=adres;};
+		  //doctors
+		  this.addDoctors = function(doctors){
+		    that.doctors = that.doctors.concat(doctors);
+		  }
+		  this.getDoctors=function(){
+		    return that.doctors;
+		  }
+		  //workers
+		  this.addWorkers = function(workers){
+		    that.workers = that.workers.concat(workers);
+		  }
+		  this.getWorkers=function(){
+		    return that.workers;
+		  }
+		  //patients
+		  this.addPatients = function(patients){
+		    that.patients = that.patients.concat(patients);
+		  }
+		  this.getPatients=function(){
+		    return that.patients;
+		  }
+		  
+		}
+
+		//New Hospital
+		let hospitalMalayan = new Hospital("Malayan");
+		hospitalMalayan.setAdres("Gexardi 5/5");
+		//new array doctors,patients,workers for object new Hospital
+		let doctors = [doctor2,doctor4];
+		let patients = [patient1,patient5];
+		let workers = [worker3,worker6];
+		//object Hospital.functions add & get
+		hospitalMalayan.addDoctors(doctors);
+		hospitalMalayan.getDoctors();
+		hospitalMalayan.addWorkers(workers);
+		hospitalMalayan.getWorkers();
+		hospitalMalayan.addPatients(patients);
+		hospitalMalayan.getPatients();
+
+		//console.log("Doctors",hospitalMalayan.doctors);
+		//console.log("Patients",hospitalMalayan.patients);
+		console.log("Deweloper",hospitalMalayan.workers[1].lastName);
+
+//_______________________Nkarchutyun_____________________
+
+		//add *Section inner html
+		var section = document.createElement('section');
+		section.id = 'block1';
+		section.className = 'block1';
+		document.getElementsByTagName('body')[0].appendChild(section);
+		section.style.marginTop="1%";
+
+//Hospital Name and style 
+var sect = document.createElement('div');
+		sect.id = 'blockk';
+		sect.className = 'blockk';
+		section.appendChild(sect);
+		sect.textContent= "Hospital "+ hospitalMalayan.name + "	+";
+		sect.style.borderRadius="8px";
+		sect.style.borderBottom="0px";
+		sect.style.fontSize="33px"
+		
+		// Now create and append to Section
+
+//BIG worker 
+var sect = document.createElement('div');
+		sect.id = 'blockk';
+		sect.className = 'blockk';
+		section.appendChild(sect);
+		sect.textContent= "Workers";
+
+		for(i=0;i<=4;i++){
+		  var innerSection = document.createElement('div');
+		innerSection.className = 'inlineBlock';
+		section.appendChild(innerSection);
+		}
+		var div1=document.getElementsByClassName("inlineBlock")[0];
+		var div2=document.getElementsByClassName("inlineBlock")[1];
+		var div3=document.getElementsByClassName("inlineBlock")[2];
+		var div4=document.getElementsByClassName("inlineBlock")[3];
+		var div5=document.getElementsByClassName("inlineBlock")[4];
+
+		div1.textContent="Name";
+		div2.textContent="LastName";
+		div3.textContent="Age";
+		div4.textContent="PassInfo";
+		div5.textContent="Profession";
+
+		// Now create child Element and append to Section Html
+
+//workers
+
+		for(i=0;i<hospitalMalayan.workers.length;i++){
+		  var div11 = document.createElement('div');
+		    div11.id = 'inlineBlock2';
+		    div11.className = 'inlineBlock2';
+		    div1.appendChild(div11);
+		    div11.textContent=hospitalMalayan.workers[i].name;
+		  
+		  var div12 = document.createElement('div');
+		    div12.id = 'inlineBlock2';
+		    div12.className = 'inlineBlock2';
+		    div2.appendChild(div12);
+		    div12.textContent=hospitalMalayan.workers[i].lastName;
+		  
+		  var div13 = document.createElement('div');
+		    div13.id = 'inlineBlock2';
+		    div13.className = 'inlineBlock2';
+		    div3.appendChild(div13);
+		    div13.textContent=hospitalMalayan.workers[i].age;
+		  
+		  var div14 = document.createElement('div');
+		    div14.id = 'inlineBlock2';
+		    div14.className = 'inlineBlock2';
+		    div4.appendChild(div14);
+		    div14.textContent=hospitalMalayan.workers[i].passInfo;
+		
+		  var div15 = document.createElement('div');
+		    div15.id = 'inlineBlock2';
+		    div15.className = 'inlineBlock2';
+		    div5.appendChild(div15);
+		    div15.textContent=hospitalMalayan.workers[i].profession;
+		}
+//BIG doctors
+var sect = document.createElement('div');
+		sect.id = 'blockk';
+		sect.className = 'blockk';
+		section.appendChild(sect);
+		sect.textContent= "Doctors";
+
+		for(i=0;i<=4;i++){
+		  var innerSection = document.createElement('div');
+		innerSection.className = 'inlineBlock';
+		section.appendChild(innerSection);
+		}
+		var div1=document.getElementsByClassName("inlineBlock")[5];
+		var div2=document.getElementsByClassName("inlineBlock")[6];
+		var div3=document.getElementsByClassName("inlineBlock")[7];
+		var div4=document.getElementsByClassName("inlineBlock")[8];
+		var div5=document.getElementsByClassName("inlineBlock")[9];
+
+		div1.textContent="Name";
+		div2.textContent="LastName";
+		div3.textContent="Age";
+		div4.textContent="PassInfo";
+		div5.textContent="Experience";
+
+//doctors
+
+		for(i=0;i<hospitalMalayan.doctors.length;i++){
+		  
+		  var div11 = document.createElement('div');
+		    div11.id = 'inlineBlock2';
+		    div11.className = 'inlineBlock2';
+		    div1.appendChild(div11);
+		    div11.textContent=hospitalMalayan.doctors[i].name;
+		  
+		  var div12 = document.createElement('div');
+		    div12.id = 'inlineBlock2';
+		    div12.className = 'inlineBlock2';
+		    div2.appendChild(div12);
+		    div12.textContent+=hospitalMalayan.doctors[i].lastName;
+		  
+		  var div13 = document.createElement('div');
+		    div13.id = 'inlineBlock2';
+		    div13.className = 'inlineBlock2';
+		    div3.appendChild(div13);
+		    div13.textContent=hospitalMalayan.doctors[i].age;
+		  
+		  var div14 = document.createElement('div');
+		    div14.id = 'inlineBlock2';
+		    div14.className = 'inlineBlock2';
+		    div4.appendChild(div14);
+		    div14.textContent=hospitalMalayan.doctors[i].passInfo;
+		
+		  var div15 = document.createElement('div');
+		    div15.id = 'inlineBlock2';
+		    div15.className = 'inlineBlock2';
+		    div5.appendChild(div15);
+		    div15.textContent=hospitalMalayan.doctors[i].experience;
+
+		}
+
+//BIG patients
+var sect = document.createElement('div');
+		sect.id = 'blockk';
+		sect.className = 'blockk';
+		section.appendChild(sect);
+		sect.textContent= "Patients";
+
+		for(i=0;i<=4;i++){
+		  var innerSection = document.createElement('div');
+		innerSection.className = 'inlineBlock';
+		section.appendChild(innerSection);
+		}
+		var div1=document.getElementsByClassName("inlineBlock")[10];
+		var div2=document.getElementsByClassName("inlineBlock")[11];
+		var div3=document.getElementsByClassName("inlineBlock")[12];
+		var div4=document.getElementsByClassName("inlineBlock")[13];
+		var div5=document.getElementsByClassName("inlineBlock")[14];
+
+		div1.textContent="Name";
+		div2.textContent="LastName";
+		div3.textContent="Age";
+		div4.textContent="PassInfo";
+		div5.textContent="Disease";
+
+
+//patients
+
+		for(i=0;i<hospitalMalayan.patients.length;i++){
+		  
+		  var div11 = document.createElement('div');
+		    div11.id = 'inlineBlock2';
+		    div11.className = 'inlineBlock2';
+		    div1.appendChild(div11);
+		    div11.textContent=hospitalMalayan.patients[i].name;
+		  
+		  var div12 = document.createElement('div');
+		    div12.id = 'inlineBlock2';
+		    div12.className = 'inlineBlock2';
+		    div2.appendChild(div12);
+		    div12.textContent+=hospitalMalayan.patients[i].lastName;
+		  
+		  var div13 = document.createElement('div');
+		    div13.id = 'inlineBlock2';
+		    div13.className = 'inlineBlock2';
+		    div3.appendChild(div13);
+		    div13.textContent=hospitalMalayan.patients[i].age;
+		  
+		  var div14 = document.createElement('div');
+		    div14.id = 'inlineBlock2';
+		    div14.className = 'inlineBlock2';
+		    div4.appendChild(div14);
+		    div14.textContent=hospitalMalayan.patients[i].passInfo;
+		
+		  var div15 = document.createElement('div');
+		    div15.id = 'inlineBlock2';
+		    div15.className = 'inlineBlock2';
+		    div5.appendChild(div15);
+		    div15.textContent=hospitalMalayan.patients[i].disease;
+
+		}
+		
+		</script>
+
+	</body>
+
+</html>
+

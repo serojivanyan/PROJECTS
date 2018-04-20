@@ -1,0 +1,10 @@
+ .userAvatar{
+    display:block;
+}
+.userAvatar:hover>.accountMenu, .userAvatar:active{
+    display: block;
+}
+
+.accountMenu{
+    display:none;
+}
