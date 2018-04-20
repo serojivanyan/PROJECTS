@@ -1,0 +1,136 @@
+img{
+    width: 100%;
+}
+
+.serviceDiv{ 
+    background-color:rgba(0,0,0,0.9);
+    position:absolute; 
+    top:4.5%; 
+    width:59%; 
+    left:35%; 
+    padding:30px;
+ }
+ .serviceTitle{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 70px;
+    text-align: center;
+}
+.lineService{
+    content: '';
+    width: 108%;
+    height: 1px;
+    background-color: rgba(255,255,255,.05);
+    position: absolute;
+    top: 50%;
+    left: -4%;
+}
+.serviceTitle span{
+    position: relative;
+    color: #bbb;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px 58px;
+    background-color: #371352;
+
+}
+.service{
+    position:relative;
+    width: 47%;
+    height: auto;
+    margin-left: 3%;
+    margin-bottom: 43px;
+    float: left;
+}
+.price{
+    position: absolute;
+    z-index: 15;
+    right: 10px;
+    bottom: 82px;
+}
+.price span{
+    padding: 9px 25px;
+    background: #371352;
+    color: #bbb;
+    font-size: 15px;
+    letter-spacing: 1px;
+    float: left;
+}
+.serviceInfo h3 a{
+    text-decoration: none;
+    color: #bbb;
+}
+.serviceInfo span{
+    font-size: 14px;
+    color: #999;
+}
+.pgNumber{
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+.pgNumber ul{
+    list-style-type: none;
+    margin: 0px;
+}
+.pgNumber ul li{
+    display: inline-block;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.pgNumber ul li a{
+    text-decoration: none;
+    background-color: #1b1216;
+    display: block;
+    color: #575556;
+}
+.pgNumber ul li .active{
+    background-color: #371352;
+    color: #bbb;
+}
+
+.pages span{
+    color: #999;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-family: cursive;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1084px){
+    .serviceDiv{
+     top:18.5%;
+     width:100%;
+     left:0px;
+    }
+   }
+   @media only screen and (max-width:768px){
+    .serviceDiv{
+     position:static;
+     width:100%;
+    }
+    .service{
+        width: 100%;
+        margin-left: 0;
+    }
+    .serviceTitle span{
+        padding: 13px 30px;
+    }
+    .pgNumber ul{
+        padding: 0;
+    }
+   }
+
+   @media only screen and (max-width:1084px){
+    .serviceDiv{
+        background-color: rgba(0,0,0,0.6);
+        margin: 0 auto;
+        position: static;
+        width: 90%;
+        padding: 3% 20px 30px;
+    }
+}

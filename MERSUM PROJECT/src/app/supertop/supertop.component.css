@@ -1,0 +1,111 @@
+img{
+    width: 100%;
+}
+
+.aboutDiv{ 
+    background-color:rgba(0,0,0,0.9);
+    position:absolute; 
+    top:4.5%; 
+    width:59%; 
+    left:35%; 
+    padding:30px;
+ }
+
+.aboutTitle{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 70px;
+    text-align: center;
+}
+.line{
+    content: '';
+    width: 108%;
+    height: 1px;
+    background-color: rgba(255,255,255,.05);
+    position: absolute;
+    top: 50%;
+    left: -4%;
+}
+.aboutTitle span{
+    position: relative;
+    color: #bbb;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px 58px;
+    background-color: #371352;
+
+}
+
+.aboutTeam{
+    text-align: center;
+}
+.teamTitle h3{
+    color: #bbb;
+    font-size: 19px;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+.teamDiv{
+    width: 47%;
+    display: inline-block;
+    margin: 10px;
+}
+.spc_name h3 {
+    font-size: 19px;
+    color: #bbb;
+    font-weight: 400;
+    font-family: cursive;
+}
+.spc_name span{
+    font-size: 14px;
+    color: #999;
+    font-family: cursive;
+}
+.aboutIcons{
+    margin: 10px 0;
+}
+.aboutIcons ul{
+    padding-left: 0;
+}
+.aboutIcons ul li{
+    display: inline-block;
+    background-color: rgba(255,255,255,0.02);
+    margin-right: 5px;
+    padding: 7px 13px;
+}
+.aboutIcons ul li:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.aboutIcons ul li a{
+    color: white;
+}
+
+
+@media only screen and (max-width:1340px){
+    .teamDiv{
+        width: 45%
+    }
+}
+@media only screen and (max-width:768px){
+    .teamDiv{
+        position: static;
+        width: 100%;
+        margin: auto;
+    }
+    .aboutTitle span{
+        padding: 13px 30px;
+    }
+    
+}
+@media only screen and (max-width:1084px){
+    .aboutDiv{
+        background-color: rgba(0,0,0,0.6);
+        margin: 0 auto;
+        position: static;
+        width: 90%;
+        padding: 3% 20px 30px;
+    }
+}

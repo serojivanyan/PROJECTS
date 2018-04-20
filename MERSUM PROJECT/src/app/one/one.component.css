@@ -1,0 +1,83 @@
+img{
+    width: 100%;
+}
+
+.singleDiv{ 
+    background-color:rgba(0,0,0,0.9);
+    position:absolute; 
+    top:4.5%; 
+    width:59%; 
+    left:35%; 
+    padding:30px;
+ }
+ .singleTitle{
+     margin-bottom: 20px;
+ }
+ .singleName{
+    width: 86%;
+    float: left;
+    display: inline-block;
+ }
+ .singleName h3 {
+    font-size: 19px;
+    color: #bbb;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-family: cursive;
+}
+.singleName span{
+    font-size: 14px;
+    color: #999;
+    font-family: cursive;
+}
+.singlePrice{
+    margin-top: 20px;
+    display: inline-block;
+}
+.singlePrice span {
+    padding: 9px 25px;
+    background: #371352;
+    color: #bbb;
+    font-size: 15px;
+    letter-spacing: 1px;
+    float: left;
+}
+.singleInfo p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 13px;
+    font-family: cursive;
+}
+.singleBtn{
+    margin-top: 30px;
+}
+.singleBtn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #bbb;
+    letter-spacing: 1px;
+    padding: 11px 36px;
+    background: #371352;
+    font-size: 12px;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+.singleBtn a:hover {
+    background: rgba(0,0,0,0.2);
+    border-color: #371352;
+}
+@media only screen and (min-width:768px) and (max-width:1084px){
+    .singleDiv{
+     top:18.5%;
+     width:100%;
+     left:0px;
+    }
+   }
+@media only screen and (max-width:767px){
+    .singleDiv{
+     position:static;
+     width:100%;
+    }
+   }
