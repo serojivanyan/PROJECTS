@@ -1,0 +1,21 @@
+	<div class="aboutBlock" [ngSwitch]="langTour">
+		<div class="about-block" *ngSwitchCase="'en'" >
+			<h1 class="title-about">About Us</h1>
+			<p class="text-about">
+				{{text[1].text.en}}
+			</p>
+		</div>
+		<div class="about-block" *ngSwitchCase="'arm'" >
+				<h1 class="title-about">Մեր մասին</h1>
+				<p class="text-about">
+					{{text[1].text.arm}}
+				</p>
+			</div>
+			<div class="about-block" *ngSwitchCase="'ru'" >
+					<h1 class="title-about">О нас</h1>
+					<p class="text-about">
+						{{text[1].text.ru}}
+					</p>
+				</div>
+	</div>
+	

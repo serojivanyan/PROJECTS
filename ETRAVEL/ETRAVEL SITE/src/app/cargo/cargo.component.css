@@ -1,0 +1,185 @@
+*{
+  padding: 0;
+  margin:0;
+}
+.item img{
+ width:100%;
+ height:300px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+.cargoMain{
+  word-wrap: break-word;
+
+  min-height: 700px;
+  background-color:#c7d7e4;
+     padding: 149px 40px;
+     /* background-image: url(with_us_background.f4056fc….jpg); */
+     background-repeat: round;
+
+}
+/* .tourDiv{
+  border-radius: 5px;
+  padding: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 15px;
+  background-color: white;
+}
+.tourDiv h1{
+ text-align:center;
+}
+.tourDiv p{
+  text-align: left;
+  height: 300px;
+
+  overflow-y: scroll
+
+} */
+
+.form-group input {
+  width: 77%;
+    height: 35px;
+    margin: 7px auto;
+    text-align: center;
+    outline: 1px solid grey;
+}
+.form-group input:focus, .form-group textarea:focus{
+  outline: 2px solid grey;
+}
+.form-group textarea{
+  width: 77%;
+    height:50px;
+    margin: 7px auto;
+    text-align: center;
+    outline: 1px solid grey;
+}
+.buttonSend{
+  padding: 10px 32px;
+  /* outline: 2px solid #a76c41; */
+  border-radius: 5px;
+  border: 1px solid #A76C46;
+  color: #A76C46;
+  font-size: 18px;
+  font-style: oblique;
+  margin: 21px 0;
+}
+.tourDiv{
+  border-radius: 5px;
+  padding: 60px 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  margin-bottom: 15px;
+  border-bottom: 4px solid;
+  /* background-color: white; */
+  position: relative;
+}
+.addcat {
+  right: 0;
+  top: 5px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid;
+  padding-left: 10px;
+  font-size: 19px;
+  background-color: green;
+  height: 38px;
+  position: absolute;
+}
+.tourDiv h1{
+ text-align:center;
+ margin-top: -20px;
+ font-weight: 900;
+}
+.tourDiv p{
+  text-align: left;
+  height: 300px;
+  margin-top: 20px;
+  overflow-y: scroll
+
+}
+.tourDiv  .pHead{
+  font-size: 35px;
+  font-weight: 600;
+  color: #a76c41;
+  margin: 0;
+  padding: 20px;
+      text-align: center;
+     height: auto;
+}
+.textTour{
+  width:60%;
+  margin-top:-19px;
+
+}
+.sl-d{
+  width:45%;
+}
+.modal{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  display: block;
+  top: 0;
+  left: 0;
+  padding-top: 27px;
+  z-index: 100;
+  display: none;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+  .modalBox {
+    width: 37%;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 0px;
+    z-index: 100;
+    border-radius: 5px;
+ 
+}
+
+
+@media only screen and (max-width:768px){
+ .incomingMain{
+ padding:149px 10px;
+ }
+ .modalBox {
+  width: 100%;
+ 
+ }
+}
+@media only screen and (max-width:679px){
+ .tourDiv{
+ display:block;
+ }
+ .textTour{
+ text-align:center;
+ width:100%;
+ }
+ .sl-d{
+ height:200px;
+ width:100%;
+ }
+ .sl-d .item img{
+ height:200px;
+ }
+}

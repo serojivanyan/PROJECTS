@@ -1,0 +1,36 @@
+img{max-width:100%;}
+/*--end reset--*/
+body {
+    font-family: 'Jura', sans-serif;
+    background:#0a4981;
+}
+
+.profile {
+    background-color: white;
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    float: right;
+    border: 2px solid grey;
+    box-shadow: 4px 2px 2px 2px #8080807a;
+    margin-right: 23px;
+}
+h3 {
+    border-bottom: 2px solid grey;
+    font-family: monospace;
+    font-variant: all-petite-caps;
+    font-size: 22px;
+}
+
+button > a:link, a:visited,a:hover,a:active{
+    color :black;
+    text-decoration: none;
+}
+button[name="logout"] {
+    background-color: #c1b1b1d1;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 15px;
+    float: right;
+
+}

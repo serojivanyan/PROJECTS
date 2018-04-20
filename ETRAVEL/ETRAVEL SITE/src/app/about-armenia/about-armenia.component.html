@@ -1,0 +1,521 @@
+<!-- <div  [class.loading-spinner]="isget"></div>
+<div class = "incomingMain">
+        <ul class="nav">
+                <li class="bor-top"><a routerLink="{{this.router.url}}" id="appCont2" style="background-color:#eee">{{x.aboutArmenia}} </a></li>
+                <li class="bor-top"><a routerLink="{{this.router.url}}/incoming" id="appCarg1">{{x.incoming_tours}} </a></li>
+               
+        </ul>
+    <div class = "tourDiv" *ngFor="let item of arr, let i=index" [ngSwitch]="langTour"> 
+     
+        <div class ="textTour" *ngSwitchCase="'en'">
+          <h1 >{{item.text.en.title}}</h1>
+          <p >
+            {{item.text.en.description}}
+           </p>
+        </div>
+        <div class ="textTour" *ngSwitchCase="'ru'">
+            <h1 >{{item.text.ru.title}}</h1>
+            <p >
+              {{item.text.ru.description}}
+             </p>
+          </div>
+          <div class ="textTour" *ngSwitchCase="'arm'">
+              <h1>{{item.text.arm.title}}</h1>
+              <p >
+                {{item.text.arm.description}}
+               </p>
+            </div>
+            <div class ="textTour" *ngSwitchDefault>
+                <h1>{{item.text.en.title}}</h1>
+                <p >
+                  {{item.text.en.description}}
+                 </p>
+              </div>
+              <div class="container sl-d">
+                  <br>
+                 <div id="myCarousel{{item.text.en.title.length}}" class="carousel slide" data-ride="carousel">
+                     <div class="carousel-inner">
+                     <div class="item active" >
+                         <img src="data:image/jpg;base64,{{item.fileInfo[0].b64}}" alt="Flower" >
+                      </div>
+                           <div class="item"  *ngFor="let item1 of item.fileInfo">
+                               <img src="data:image/jpg;base64,{{item1.b64}}" alt="Flower" >
+                            </div>
+                         </div>
+                       </div>
+                 </div>
+  </div> 
+
+
+  
+</div> -->
+<div class = "aboutMain" >
+    <!-- 
+ -->
+        <ul class="nav">
+                <li class="bor-top"><a routerLink="{{this.router.url}}" id="appCont2" style="background-color:#eee">{{x.aboutArmenia}} </a></li>
+                <li class="bor-top"><a routerLink="{{this.router.url}}/incoming" id="appCarg1">{{x.incoming_tours}} </a></li>
+               
+        </ul>
+        <div *ngIf="langTour=='en' || langTour=='arm'">
+        <h1 class="h1Facts">12 Interesting Facts About Armenia That You Might Not Know</h1>
+        <div class="contDiv" >
+            <p><b>Armenia is a small country that connects Europe to Asia. It was one of the major powers,
+                 the third largest state in the Near East, after the Roman Empire and Parthia over 2000 years ago. 
+                 Now Armenia is a modern country with nice and talented people, ancient history, thousands of historical
+                  monuments, rich culture, 
+                traditional hospitality, delicious and healthy food, beautiful nature and safe environment
+            Armenia is an independent democratic country with a population of around 3.2 million.
+                 It is a predominantly Christian country. Armenia has a good record of international,
+                  intercultural, religious as well as political, civil and social tolerance. Republic 
+                  of Armenia is a member of the United Nations, Council of Europe and other international 
+                  organizations.</b>
+            </p>
+        <div class="itemsDiv">
+            <h2>1. Chess is a compulsory subject in schools</h2>
+            <p>Interesting huh? All students have to take chess as a compulsory subject in school and 
+                there are even exams for it! The photo below shows the renowned Tigran Petrosian Chess House in
+                 Yerevan where many huge international chess tournaments have been held.</p>
+                 <div class="itemImg">
+                        <img src="../../assets/images/chess.jpg" >
+                        <img src="../../assets/images/chess1.jpg">
+                    </div>    
+        </div>  
+        <div class="itemsDiv">
+                <h2>2. Armenia was the first country to have adopted Christianity as its state religion
+                    </h2>
+                <p>Today, 97% of the population today are Christians and
+                     Armenia has one of the most beautiful churches in the world.
+                      Check out our post on the 10 most beautiful Armenian churches that
+                       you must visit. The country was converted to Christianity back in 301AD by St Gregory
+                        Illuminator and since then, many churches have been built under his name.
+                         There are so many beautiful churches in Armenia and we have 
+                    come up with our own list of the top 10 most beautiful churches in Armenia
+</p>
+                     <div class="itemImg">
+                            <img src="../../assets/images/church.jpg" >
+                            <img src="../../assets/images/church1.jpg">
+                        </div>    
+            </div>  
+
+
+
+            <div class="itemsDiv">
+                    <h2>3.Armenia is one of the only mono ethnic countries in the world
+
+                        </h2>
+                    <p>97% of the people living in Armenia are Armenians and the
+                         remaining small percentage is made up of different ethnic minorities
+                          such as the Yazidis, Russians, Ukranians, Kurds, and more.
+
+    </p>
+                         <div class="itemImg">
+                                <img src="../../assets/images/etnic.jpg" >
+                                <img src="../../assets/images/etnic2.jpg">
+                            </div>    
+                </div>  
+                
+                
+
+
+
+                <div class="itemsDiv">
+                        <h2>4. The first church in the world was built in Armenia</h2>
+                        <p>Holy Etchimiadzin was the first state church built in the world back in the early 4th century. This place is also the headquarter of all the churches in Armenia and it’s one of the most visited pilgrimage site in the world. Unfortunately this beautiful building has been under construction for 
+                            the past few years and we were unable to capture a nice shot of it. </p>
+                             <div class="itemImg">
+                                    <img src="../../assets/images/gavit-of-medieval-armenian-church.jpe" >
+                                    <img src="../../assets/images/firstChurch.jpg">
+                                </div>    
+                    </div>   
+                    
+                    
+                    <div class="itemsDiv">
+                            <h2>5. An estimated 1.5 million Armenians were killed during the Genocide</h2>
+                            <p>The genocide refers to the mass killings of Armenians that began under Ottoman rule in 1915. Coincidentally, 
+                                this year 24th April 2015 marks the 100th year anniversary of the genocide. The Genocide museum was 
+                                closed for a year for thorough restoration and will only be opened 2 days before its 100th anniversary. 
+                                The genocide happened during and after first world war where more than 1.5million Armenians were brutally 
+                                killed without any mercy by her enemy. The genocide happened in 3 phases, the first was when all the men were
+                                 being called out to join the army and then killed (so that the rest of the population will not have any
+                                  males to protect them),
+                                 then next was the killing of all women, elderly and children, and the last was the intellectuals.</p>
+                                 <div class="itemImg">
+                                        <img src="../../assets/images/Сниjgjмок.JPG" >
+                                        <img src="../../assets/images/Memorialnyi_kompleks_Cicernakaberd_1.jpeg">
+                                    </div>    
+                        </div>   
+                        
+                        
+
+                        <div class="itemsDiv">
+                                <h2>6. Armenia is one of the oldest wine producing country in the world</h2>
+                                <p>Armenia is one of the oldest country that has produced wine in the world. It’s attributed to its blessed location of being on the 
+                                    fertile valleys of Mt Ararat where high quality grapes could be grown.</p>
+                                     <div class="itemImg">
+                                            <img src="../../assets/images/Сниvgjgkмок.JPG" >
+                                            <img src="../../assets/images/_gor2941.jpg">
+                                        </div>    
+                            </div>   
+                            
+                            
+                            <div class="itemsDiv">
+                                    <h2>7. Armenians bake their lavash underground in a tonir</h2>
+                                    <p>A tonir basically refers to an underground earth oven as shown in the 
+                                        photo below. Armenians love to eat lavash which is this thin layer of
+                                         flat chewy bread that’s made from flour, salt and water and baked in a tonir.
+                                          Lavash can be kept for 1 year without turning bad. So usually the local women will bake
+                                           the lavash in bulk and then store them to eat slowly for the next few months. Armenians
+                                            cannot imagine having their meals without bread! 
+                                        (Even if they’re eating rice, they’ll need to have bread with it too!)</p>
+                                         <div class="itemImg">
+                                                <img src="../../assets/images/lavash_tonir.jpg" >
+                                                <img src="../../assets/images/p1410073.jpg">
+                                            </div>    
+                                </div>   
+                                
+                                
+
+                                <div class="itemsDiv">
+                                        <h2>8. The entire country worships Mt Ararat which is also the national symbol of Armenia</h2>
+                                        <p>According to our guide, Mt Ararat protected Armenia from a super strong earthquake! 
+                                            They also believe that the peak of Mt Ararat was where Noah’s ark was found. But sadly,
+                                             Mt Ararat is not even within the territory of Armenia at the moment</p>
+                                             <div class="itemImg">
+                                                    <img src="../../assets/images/Сниazaмок.JPG" >
+                                                    <img src="../../assets/images/Mount_Ararat_and_the_Yerevan_skyline_in_spring_(50mm).jpg">
+                                                </div>    
+                                    </div>   
+                                    
+                                    
+
+                                    <div class="itemsDiv">
+                                            <h2>9. The apricot is one of the symbols of Armenia
+                                                </h2>
+                                            <p>The flag on the right in the photo below belongs to Armenia and the orange colour of the flag actually symbolises the apricot! That’s how significant apricots are to Armenia! And when you walk through the markets, you’ll find vendors selling apricots of all sort from dried apricot, fresh apricot, apricot flavoured wine, apricot juice and anything else that you can think of!
+                                                </p>
+                                                 <div class="itemImg">
+                                                        <img src="../../assets/images/234253_42289nothumb500.jpg" >
+                                                        <img src="../../assets/images/armenia_flag-t3.jpg">
+                                                    </div>    
+                                        </div>   
+                                        
+                                        
+                                        <div class="itemsDiv">
+                                                <h2>10. Yerevan is also known as the “pink city”
+                                                    </h2>
+                                                <p>Yerevan is one of the most beautiful “pink city’ that we’ve ever been to, her buildings
+                                                     were all made of naturally coloured volcanic rocks of varying shades of pink,
+                                                     hence giving her the name “pink city”.</p>
+                                                     <div class="itemImg">
+                                                            <img src="../../assets/images/republic+square+yerevan.jpg" >
+                                                            <img src="../../assets/images/Yerevan-plus-Ararat.jpg">
+                                                        </div>    
+                                            </div>   
+                                            
+                                            
+                                            <div class="itemsDiv">
+                                                    <h2>11. There’s a ‘stork village’ here in Armenia!
+                                                        </h2>
+                                                    <p>We were on our way to the Noravank Church when we passed by this village with a whole row of long wooden poles lined up neatly along the road and a huge stork’s nest on the top of each pole! It was so amazing! These storks migrate to Africa every year before the winter arrives and returns when it’s spring! We happened to be there when it was almost spring and some of the storks have already arrived back home to their nest. It was such a cute sight! Also, the nests were so huge that some other smaller birds such as the sparrows have made their own little nest out of the huge stork’s nest! (From the photo on the right below, you can see a few sparrows happily making their home in the stork’s nest)
+                                                        </p>
+                                                         <div class="itemImg">
+                                                                <img src="../../assets/images/16673993125_cf6f90974e_o.jpg" >
+                                                                <img src="../../assets/images/istock-511308224.jpg">
+                                                            </div>    
+                                                </div>
+                                                <div class="itemsDiv">
+                                                        <h2>12. There is no discrimination between tourists and locals in Armenia</h2>
+                                                        <p>This has gotta be one of our favourite points. We really like how there’s no discrimination between tourists and the locals here in Armenia! Tickets to all attractions in Armenia were priced the same for both locals and tourists, unlike in some other countries such as Iran where the tourist price is almost 10 times more expensive than the local’s price. Actually, it’s free entry to all the churches in Armenia, which is pretty amazing actually. In Central Asia and Iran, we had to pay entrance fees to enter their mosques. Only certain attractions such as the Garni Temple below requires a small fee for the entrance ticket.
+                                                            </p>
+                                                             <div class="itemImg">
+                                                                    <img src="../../assets/images/Снazazимок.JPG" >
+                                                                    <img src="../../assets/images/f597f37baa422f_597f37baa426f.thumb.jpg">
+                                                                </div>    
+                                                    </div>  
+                                                    
+                                                    <div class="visitDiv">
+                                                            <h1 class="h1Facts">Armenia Travel Guide
+                                                            </h1>
+                                                            <h3>When to travel</h3>
+                                                            <p>You can travel to Armenia any time of the year. Cultural and historical tours are the most pleasant in late spring and early autumn, and winters are great for skiing in the mountains. There are many local festivals and bright holidays, plus religious, cultural, historical and gastronomical events in Armenia for you to enjoy. Our Armenia travel guide has collected everything you need in the links below to make the most of your trip.
+                                                            </p>
+                                                           Visa to Armenia
+                                                            <p>Citizens of almost all of European and CIS countries can stay in Armenia for up to 180 days visa free. Citizens of many other countries can receive visas on arrival at some border crossings, international airports and railway stations. E-visas are also available through the Ministry of Foreign Affairs. Citizens of some countries need to apply for a visa at consulates, which may require a letter of invitation (LOI).</p>
+                                                
+                                                            <h3>Arriving
+                                                            </h3>
+                                                            <p>The easiest way to get to Armenia is by flying to Zvartnots International Airport, near Yerevan. There are regular flights to Yerevan from Moscow and some cities in Europe. It is also possible to cross land borders from Georgia and Iran; land border crossings with Azerbaijan and Turkey are unfortunately closed. There is also a daily train to Armenia from Tbilisi, Georgia.
+                                                            </p>
+                                                            <h3>Customs regulations </h3>
+                                                            <p>Visitors can import 2 liters or 1 bottle of alcohol, 400 cigarettes, and personal belongings costing not more than $500 USD without paying a customs fee. Cash amounts of more than $10,000 USD must be declared upon arrival, and it is forbidden to export more than $10,000 USD from Armenia. Citizens of the Eurasian Customs Union (Belarus, Kazakhstan, Kyrgyzstan, Russia) are exempt from regulations on cash import and export. Exporting art requires permission from the Ministry of Culture and payment of a customs fee (around $10) at the airport.
+                                                            </p>
+                                                            <h3>DO's in Armenia
+                                                            </h3>
+                                                            <ul>
+                                                                <li>Climb the cascade in Yerevan</li>
+                                                                <li>Drive along the Lake Sevan</li>
+                                                                <li>See the monasteries of Echmiadzin
+                                                                    </li>
+                                                                <li>Enjoy the beauty of Tatev Monastery
+                                                                    </li>
+                                                                <li>Make a photo of Ararat Mountains
+                                                                    </li>
+                                                                <li>Try Armenian cognac
+                                                                    </li>
+                                                                <li>Worship the God of Sun in Garni
+                                                                    </li>
+                                                                <li>Improve your health in Dilijan
+                                                                    </li>
+                                                                <li>Study the architecture of Geghard monastery
+                                                                    </li>
+                                                                <li>Make a pilgrimage to the Khor Virap</li>
+                                                            </ul>
+                                                
+                                                
+                                                            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div *ngIf="langTour=='ru' ">
+            <h1 class="h1Facts">12 интересных фактов об Армении</h1>
+            <div class="contDiv" >
+                <p><b>Армения — маленькое государство, которое связывает Европу с Азией. 2000 лет назад эта страна была одной из могущественных держав Ближнего Востока, после Римской империи и Парфянского царства. Сейчас она предстает перед нами как современное государство с добрыми и талантливыми людьми, с древней историей, множеством исторических памятников, богатой культурой, традиционным гостеприимством, вкусной и здоровой пищей, красивой природой и безопасной окружающей средой.
+                </b></p>
+                <p>Армения — независимое демократическое государство, с населением около 3.2 млн человек. Это христианская страна. Армения проявляет толерантность в международном, межкультурном, религиозном, так же как в политическом, общественном и социальном вопросах.
+                    Республика Армения является членом ООН, Совета Европы и других международных организаций.
+                    
+                </p>
+            <div class="itemsDiv">
+                <h2>1. Шахматы являются обязательным предметом в школах
+                </h2>
+                <p>Интересно , да? Все учащиеся проходят в школе обязательный предмет – шахматы, по которым даже сдают экзамены. На фото запечатлен известный Дом Шахмат имени Тиграна Петросяна, в котором проходило множество шахматных турниров.
+                </p>
+                     <div class="itemImg">
+                            <img src="../../assets/images/chess.jpg" >
+                            <img src="../../assets/images/chess1.jpg">
+                        </div>    
+            </div>  
+            <div class="itemsDiv">
+                    <h2>2. Армения – первая страна, принявшая христианство в качестве государственной религии
+                        </h2>
+                    <p>97% населения Армении составляют христиане и самые красивые церкви мира находятся именно в Армении. Страна была обращена в христианство в 301 году Григорием Просветителем (Григор Лусаворич) и с тех пор построено множество армянских церквей, носящих его имя. В Армении так много красивых церквей, что мы составили специальный список из 10 самых красивых, которые нужно посетить.
+
+    </p>
+                         <div class="itemImg">
+                                <img src="../../assets/images/church.jpg" >
+                                <img src="../../assets/images/church1.jpg">
+                            </div>    
+                </div>  
+    
+    
+    
+                <div class="itemsDiv">
+                        <h2>3. Армения – одна из немногих моноэтнических стран мира
+
+    
+                            </h2>
+                        <p>97% процентов населения Армении – армяне. Небольшой процент стране составляют езиды, русские, украинцы, курды и т.д.
+
+    
+        </p>
+                             <div class="itemImg">
+                                    <img src="../../assets/images/etnic.jpg" >
+                                    <img src="../../assets/images/etnic2.jpg">
+                                </div>    
+                    </div>  
+                    
+                    
+    
+    
+    
+                    <div class="itemsDiv">
+                            <h2>4. Первая в мире церковь построена в Армении
+                                a</h2>
+                            <p>Эчмиадзинский кафедральный собор был первой официальной церковью, построенной в 4 веке. Это место является штаб-квартирой всех армянских церквей мира, а также одним самых из посещаемых мест для паломничества.
+                            </p>
+                                 <div class="itemImg">
+                                        <img src="../../assets/images/gavit-of-medieval-armenian-church.jpe" >
+                                        <img src="../../assets/images/firstChurch.jpg">
+                                    </div>    
+                        </div>   
+                        
+                        
+                        <div class="itemsDiv">
+                                <h2>5. Около 1,5 миллиона армян было убито во время геноцида
+                                </h2>
+                                <p>Геноцид относится к массовым убийствам армян, которые начались в Османской империи в 1915 году. В этом году, 24 апреля этому событию исполнилось 100 лет. Музей геноцида был закрыт для реставрации сроком на год и открылся только за два дня до столетней годовщины. Около 1,5 миллиона армян были безжалостно убиты . Геноцид проходил в три этапа: на первом были призваны в армию и убиты армянские мужчины ( население осталось без мужчин и их некому было защищать), на втором этапе убивали женщин, детей и стариков, а на третьем – представителей армянской интеллигенции.
+                                </p>
+                                     <div class="itemImg">
+                                            <img src="../../assets/images/Сниjgjмок.JPG" >
+                                            <img src="../../assets/images/Memorialnyi_kompleks_Cicernakaberd_1.jpeg">
+                                        </div>    
+                            </div>   
+                            
+                            
+    
+                            <div class="itemsDiv">
+                                    <h2>6. Армения одна из древнейших винодельческих стран мира
+                                    </h2>
+                                    <p>Армения является одно из древнейших в мире стран, где начали производить вино. Это связано с ее благословленным местом нахождения – на плодородных долинах горы Арарат, где выращивается высококачественный плод винограда .
+                                    </p>
+                                         <div class="itemImg">
+                                                <img src="../../assets/images/Сниvgjgkмок.JPG" >
+                                                <img src="../../assets/images/_gor2941.jpg">
+                                            </div>    
+                                </div>   
+                                
+                                
+                                <div class="itemsDiv">
+                                        <h2>7. Единственная страна, которая печет лаваш в подземном тонире
+                                        </h2>
+                                        <p>Тонир – это подземная печь, показанная на фото ниже. Армяне любят лаваш , тонкий хлеб, приготовленный в тонире из муки, соли и воды. Лаваш может храниться до года и не портиться. Местные женщины пекут лаваш с запасом на несколько месяцев. Армяне не могут представить себе ни одно блюдо без хлеба (они даже рис едят с хлебом).
+                                        </p>
+                                             <div class="itemImg">
+                                                    <img src="../../assets/images/lavash_tonir.jpg" >
+                                                    <img src="../../assets/images/p1410073.jpg">
+                                                </div>    
+                                    </div>   
+                                    
+                                    
+    
+                                    <div class="itemsDiv">
+                                            <h2>8. Вся страна поклоняется горе Арарат – символу Армении
+                                            </h2>
+                                            <p>По словам нашего гида, гора Арарат спасла армян от разрушительного землетрясения. Еще, армяне утверждают, что на вершине горы Арарат был найден ковчег Ноя. Но, к большому сожалению, сегодня Арарат не находится на территории Армении (находится на территории Турции – ред.).
+
+                                            </p>
+                                                 <div class="itemImg">
+                                                        <img src="../../assets/images/Сниazaмок.JPG" >
+                                                        <img src="../../assets/images/Mount_Ararat_and_the_Yerevan_skyline_in_spring_(50mm).jpg">
+                                                    </div>    
+                                        </div>   
+                                        
+                                        
+    
+                                        <div class="itemsDiv">
+                                                <h2>9. Абрикос является одним из символов Армении
+
+                                                    </h2>
+                                                <p>Флаг справа на фото – это армянский флаг. Оранжевый цвет флага символизирует армянский абрикос . Вот какое значение имеет этот фрукт для армян. На рынке вы найдете абрикосы всех видов – свежие, в виде кураги, абрикосовый сок и все что только можно себе представить , приготовленное из него.
+
+                                                    </p>
+                                                     <div class="itemImg">
+                                                            <img src="../../assets/images/234253_42289nothumb500.jpg" >
+                                                            <img src="../../assets/images/armenia_flag-t3.jpg">
+                                                        </div>    
+                                            </div>   
+                                            
+                                            
+                                            <div class="itemsDiv">
+                                                    <h2>10. Ереван называют «розовым городом»
+
+                                                        </h2>
+                                                    <p>Ереван – один из красивейших городов, в которых мы когда-либо бывали. Здания города построены из натурального камня различных оттенков розового ( туф – ред.), который и придает городу волшебный вид.
+                                                    </p>
+                                                         <div class="itemImg">
+                                                                <img src="../../assets/images/republic+square+yerevan.jpg" >
+                                                                <img src="../../assets/images/Yerevan-plus-Ararat.jpg">
+                                                            </div>    
+                                                </div>   
+                                                
+                                                
+                                                <div class="itemsDiv">
+                                                        <h2>11. «Деревня аистов» в Армении
+
+                                                            </h2>
+                                                        <p>Это село располагается по дороге к Нораванкскому монастырю . На вершинах деревянных столбов, выстроенных по одной линии, находятся гнезда аистов. А на каждом гнезде стоит большой аист. Это просто удивительно. Эти аисты каждый год перед зимой мигрируют в Африку, а уже к весне возвращаются домой.
+
+ 
+
+                                                            </p>
+                                                             <div class="itemImg">
+                                                                    <img src="../../assets/images/16673993125_cf6f90974e_o.jpg" >
+                                                                    <img src="../../assets/images/istock-511308224.jpg">
+                                                                </div>    
+                                                    </div>
+                                                    <div class="itemsDiv">
+                                                            <h2>12. В Армении нет дискриминации между туристами и местными
+                                                            </h2>
+                                                            <p>Нам очень понравилось то, что в Армении нет дискриминации между местными жителями и туристами. Цены для туристов и местных в Армении одинаковы, в отличие от ряда других стран, где для того, чтобы посмотреть на достопримечательности турист должен платить в 10 раз дороже. Довольно удивительным фактом является то, что вход во все церкви в Армении бесплатный. В Армении только некоторые места, такие как храм Гарни например, требуют небольшой оплаты для входа.
+
+                                                                </p>
+                                                                 <div class="itemImg">
+                                                                        <img src="../../assets/images/Снazazимок.JPG" >
+                                                                        <img src="../../assets/images/f597f37baa422f_597f37baa426f.thumb.jpg">
+                                                                    </div>    
+                                                        </div>    
+            </div>
+
+
+            <div class="visitDiv">
+                    <h1 class="h1Facts">Армения - Путеводитель
+
+                    </h1>
+                    <h3>Лучшее время для поездки</h3>
+                    <p>Путешествие в Армению можно начать в любое время года. Однако наиболее приятным путешествие будет поздней весной и ранней осенью. Любители горных лыж, конечно же, должны поехать в Армению зимой. Ежегодно в Армении проводится большое количество праздников: религиозных, культурных, исторических и гастрономических, о которых расскажет наш путеводитель по Армении. Кроме того, каждый год в Армении проходит несколько крупных тематических выставок.
+                        </p>
+                    <a href="">Виза</a>
+                    <p>Безвизовый режим въезда в Армению сроком до 180 дней действует для граждан практически для всех стран СНГ и Европы. Также, упрощенное ускоренное получение визы по прибытию в аэропорту действует для жителей многих стран мира. И кроме того, для удобства туристов, которым необходима виза в Армению, можно получить электронную визу через официальный сайт МИД. Узнайте больше о визе в Армению и о требованиях заполнения анкеты на получение визы.
+                        </p>
+        
+                    <h3>Как приехать
+                        </h3>
+                    <p>Удобнее всего путешествовать в Армению самолетом, а именно прилететь в международный аэропорт Звартноц (Ереван). Регулярно сюда отправляются рейсы из Москвы и некоторых городов Европы. Также, можно отправиться в Армению на машине, приехав из Грузии или Ирана. К сожалению, граница Армении с Азербайджаном и Турцией закрыта. Кроме того, можно отправиться в Армению из соседней Грузии на поезде, который ежедневно отправляется из Тбилиси. Путеводитель по Армении позволит легко подобрать нужный транспорт.
+                        </p>
+                    <h3>Таможенные правила</h3>
+                    <p>При въезде в Армению необходимо заполнить таможенную декларацию в двух экземплярах, где указывается сумма ввозимой валюты и драгоценности. Ввозить и вывозить можно до 10000 долларов США. Также, можно ввозить до 2 литров алкоголя, 50 пачек сигарет, и личные вещи общей стоимостью не более 500 долларов, иначе потребуется оплатить таможенную пошлину. Вывоз антиквариата и прочих драгоценностей, купленных в Армении, без разрешения Министерства культуры запрещен.
+                        </p>
+                    <h3>Что нужно сделать в Армении
+
+                    </h3>
+                    <ul>
+                        <li>Подняться на Каскад в Ереване
+                            </li>
+                        <li>Проехать вдоль озера Севан</li>
+                        <li>Увидеть монастыри Эчмиадзина</li>
+                        <li>Полюбоваться красотой Татева</li>
+                        <li>Сделать фото горы Арарат
+                            </li>
+                        <li>Попробовать армянский коньяк
+                            </li>
+                        <li>Поклониться богу солнца в Гарни
+                            </li>
+                        <li>Укрепить здоровье в Дилижане
+                            </li>
+                        <li>Изучить архитектуру храма Гегард
+                            </li>
+                        <li>Совершить паломничество в Хор Вирап
+                            </li>
+                    </ul>
+        
+        
+                    </div>
+        
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,266 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+.itH1{
+    
+
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    font-weight: 600;
+    color: #1f6786;
+
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  #slides {
+    position: relative;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide {
+    
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background:rgb(72,204,253);;
+}
+.slide:nth-of-type(2) {
+    background: rgb(1,146,211);
+}
+.slide:nth-of-type(3) {
+    background: rgb(252,130,45);;
+}
+.slide:nth-of-type(4) {
+    background: rgb(233, 60, 26);;
+}
+.slide:nth-of-type(5) {
+    background: purple;
+}
+section{
+    margin-top:100px;
+
+}
+
+#logo {
+    width: 17%;
+    height: auto;
+    /* margin: auto; */
+    margin-left: 6%;
+}
+.navbar-default {
+    background-color: rgb(255,255,255);
+    border-color: black;
+}
+.navbar-nav>li>a {
+    padding-top: 30px;
+    padding-bottom: 32px;
+    font-size: 19px;
+    height: auto;
+    display: block;
+}
+
+
+
+
+.divTextSlide, divImgSlide{
+    display: inline-block;
+    
+}
+.divImgSlide1{
+    float: right;
+    width: 39%;
+}
+.divImgSlide2{
+    float: left;
+    width: 39%;
+}
+.divTextSlide{
+    text-align: center;
+    /* padding-top: 5%; */
+    width: 55%;
+}
+.divTextSlide p {
+    text-align: right;
+    font-size: 16px;
+    /* width: 91%; */
+    float: right;
+}
+#slides{
+    width: 94%;
+    margin: auto;
+}
+
+
+ .divTextSlide h1 {
+    font-size: 49px;
+    font-weight: 600;
+      font-family: Marker Felt, fantasy;
+    letter-spacing: 1.9px;
+    padding-bottom: 7%;
+}
+
+.divMenu1{
+    background-image: url("../images/IT Frame (1).png")
+}
+
+.divMenu2{
+    background-image: url("../images/IT Frame (2).png")
+}
+.divMenu3{
+    background-image: url("../images/IT Frame (3).png")
+}
+.divMenu4{
+    background-image: url("../images/IT Frame (4).png")
+}
+
+.one{
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    width:200px;
+    height:200px;
+    -webkit-border-radius:0;
+	-moz-border-radius:0;
+    border-radius:0;
+    background-repeat:no-repeat;
+    background-origin:border-box;
+    background-position:50% 50%;
+    
+    border-width:50px;
+    border-color:rgba(0,0,0,0);
+    
+    -webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -ms-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    transition:0.5s ease;
+}
+
+.one:hover {
+    border: 1px dashed rgba(0, 188, 212, 0.9);
+}
+
+ div.one {border:100px dashed rgba(0, 188, 212, 0);
+            background-color: white
+}
+
+
+
+
+ .two:hover {
+    border: 1px dashed rgba(0,57,83,0.9);
+}
+
+ div.two {
+     border:100px dashed rgba(0,57,83,0);
+     background-color: white;
+    
+    }
+
+
+
+
+ .three:hover {
+    border: 1px dashed  rgba(216, 77, 33, 0.9);
+}
+
+ div.three {
+     border:100px dashed rgba(216, 77, 33, 0);
+     background-color: white;
+    }
+
+
+
+
+
+ .four:hover {
+ border: 1px dashed rgba(223, 37, 0, 0.9);
+}
+
+ div.four {
+     border:100px dashed rgba(223, 37, 0, 0);
+     background-color: white;
+}
+
+
+
+
+.menuItems .col-md-3{
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/* .oneDiv{
+background-color:  rgba(0, 188, 212, 0.5)
+}
+.twoDiv{
+background-color: rgba(0,57,83,0.5)
+}
+.threeDiv{
+background-color: rgba(216, 77, 33, 0.5)
+}
+.fourDiv{
+    background-color: rgba(83, 13, 0, 0.5)
+} */
+
+.row{
+
+        height: 400px;
+        background-color: rgba(234, 234, 234, 0.69);
+        padding-top: 6%;
+        width: 94%;
+        margin: auto;
+        border:15px solid rgba(234, 234, 234, 0.69)
+    
+}
+.row .col-md-3{
+    background-color: white;
+}
