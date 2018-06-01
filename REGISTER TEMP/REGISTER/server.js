@@ -8,7 +8,7 @@ var userRouter = require("./routes/userRouter.js");
 
 var MongoStore = require('connect-mongo')(session);
 //connect to MongoDB
-mongoose.connect('mongodb://admin:password@ds149974.mlab.com:49974/reguserdatabase');
+mongoose.connect('mongodb:/****************************reguserdatabase');
 var db = mongoose.connection;
 
 
